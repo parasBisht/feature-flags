@@ -1,0 +1,52 @@
+{
+    "name": "parasbisht/cakephp-feature-flags",
+    "description": "Database-driven, scope-based feature flag management plugin for CakePHP 5.",
+    "type": "cakephp-plugin",
+    "license": "MIT",
+    "keywords": ["cakephp", "plugin", "feature-flags", "feature-toggle"],
+    "homepage": "https://github.com/parasBisht/cakephp-feature-flags",
+    "authors": [
+        {
+            "name": "Paras Bisht",
+            "homepage": "https://github.com/parasBisht",
+            "role": "Author"
+        }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "cakephp/cakephp": "^5.0"
+    },
+    "require-dev": {
+        "cakephp/cakephp-codesniffer": "^5.0",
+        "phpstan/phpstan": "^1.0",
+        "phpunit/phpunit": "^10.0 || ^11.0",
+        "cakephp/migrations": "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ParasBisht\\FeatureFlags\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ParasBisht\\FeatureFlags\\Test\\": "tests/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "cakephp/plugin-installer": true
+        }
+    },
+    "scripts": {
+        "cs-check": "phpcs --colors -p src/ tests/",
+        "cs-fix": "phpcbf --colors -p src/ tests/",
+        "stan": "phpstan analyse src/ --level=5",
+        "test": "phpunit --colors=always",
+        "check": [
+            "@cs-check",
+            "@stan",
+            "@test"
+        ]
+    }
+}

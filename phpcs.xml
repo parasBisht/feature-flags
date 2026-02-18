@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<ruleset name="FeatureFlags">
+    <description>CakePHP Feature Flags Plugin Coding Standard</description>
+
+    <file>src</file>
+    <file>tests</file>
+
+    <arg name="extensions" value="php"/>
+    <arg name="colors"/>
+    <arg value="p"/>
+
+    <rule ref="CakePHP"/>
+</ruleset>
