@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/github/license/parasBisht/cakephp-feature-flags)](LICENSE)
 [![CI](https://github.com/parasBisht/cakephp-feature-flags/actions/workflows/ci.yml/badge.svg)](https://github.com/parasBisht/cakephp-feature-flags/actions/workflows/ci.yml)
 
+This branch is for use with **CakePHP 5.x**. See [version map](https://github.com/parasBisht/feature-flags/wiki#cakephp-version-map) for details.
+
 Database-driven, scope-based feature flag management for **CakePHP 5**.
 
 Unlike config-file approaches, this plugin stores flags in the database, so you can toggle them at runtime without a redeploy.
