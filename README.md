@@ -41,7 +41,7 @@ Unlike config-file approaches, this plugin stores flags in the database, so you 
 ## Installation
 
 ```bash
-composer require parasbisht/cakephp-feature-flags
+composer require parasbisht/feature-flags
 ```
 
 Load the plugin in `src/Application.php`:
