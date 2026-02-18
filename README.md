@@ -1,4 +1,4 @@
-# CakePHP Feature Flags
+# Feature Flags
 
 [![PHP Version](https://img.shields.io/badge/php-%3E%3D8.1-blue)](https://php.net)
 [![CakePHP](https://img.shields.io/badge/CakePHP-5.x-red)](https://cakephp.org)
